@@ -1,0 +1,84 @@
+Branching:
+
+Do make new branch off currnet banch with:
+	git checkout -b <newBranchName>
+
+	
+	
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (master)
+$ git checkout -b WeekendBranch2
+M       GitIntro.txt
+M       WeekendFence.txt
+Switched to a new branch 'WeekendBranch2'
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git commit -m "trying to commit to WeekendBranch2"
+On branch WeekendBranch2
+Changes not staged for commit:
+        modified:   GitIntro.txt
+        modified:   WeekendFence.txt
+
+no changes added to commit
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git status
+On branch WeekendBranch2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GitIntro.txt
+        modified:   WeekendFence.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git commit -a -m "trying to commit WeekendFence.txt to WeekendBranch2"
+[WeekendBranch2 04f4fd1] trying to commit WeekendFence.txt to WeekendBranch2
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ ls
+GitIntro.txt  README.md  WeekendFence.txt
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git st
+git: 'st' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        status
+        reset
+        stage
+        stash
+        svn
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git status
+On branch WeekendBranch2
+nothing to commit, working directory clean
+
+karlh@BLI12008 MINGW64 /c/Code/TestRepoKarl (WeekendBranch2)
+$ git log --graph --decorate
+* commit 04f4fd1bff35c52b9f84a89a1d54fc48da68875e (HEAD -> WeekendBranch2)
+| Author: Karl Hess <khess@alpha.com>
+| Date:   Mon May 23 08:59:23 2016 -0700
+|
+|     trying to commit WeekendFence.txt to WeekendBranch2
+|
+* commit 7bf22a0b34cb3d24d01f9de016ad8f65fa10c80e (master)
+| Author: Karl Hess <khess@alpha.com>
+| Date:   Mon May 23 08:50:49 2016 -0700
+|
+|     Trying to commit to Weekend branch.
+|
+* commit 00225b8e412912d82004a5e4f728192b0b67aa9e (origin/master, origin/HEAD, WeekendFeature)
+| Author: Karl Hess <khess@alpha.com>
+| Date:   Mon May 23 08:42:15 2016 -0700
+|
+|     First commit
+|
+* commit 36e78316871fc19618bda5bda80405018ce8a93d
+  Author: hessk <hessk@users.noreply.github.com>
+  Date:   Thu Dec 4 15:07:28 2014 -0800
+
+      Initial commit
