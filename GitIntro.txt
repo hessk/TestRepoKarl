@@ -1,5 +1,6 @@
 right click -> Git Clone... 
 	Url: url of hosted repo
 	check recursive.
-	
+
+Yay, I am using vi in windows with GitBash over MINGW!
 	
