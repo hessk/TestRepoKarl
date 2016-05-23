@@ -1,2 +1,3 @@
 I built a fence this weekend.
 Well, I don't think the last commit was on the branch. Lets try again.
+Lets See if i can get merge conflict.
