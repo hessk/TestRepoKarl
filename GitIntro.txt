@@ -1,0 +1,5 @@
+right click -> Git Clone... 
+	Url: url of hosted repo
+	check recursive.
+	
+	
